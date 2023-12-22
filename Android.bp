@@ -1,0 +1,12 @@
+cc_prebuilt_binary {
+    name: "bsdtar",
+    visibility: ["//visibility:public"],
+    arch: {
+        arm64: {
+            srcs: ["arm64/bsdtar"],
+        },
+        x86_64: {
+            srcs: ["x86_64/bsdtar"],
+        },
+    },
+}
